@@ -1,0 +1,24 @@
+{
+  "name": "-cypress-components.",
+  "version": "1.0.0",
+  "description": "Gouveia Tristan",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toga280/-cypress-components..git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Toga280/-cypress-components./issues"
+  },
+  "homepage": "https://github.com/Toga280/-cypress-components.#readme",
+  "devDependencies": {
+    "cypress": "^15.0.0"
+  }
+}
