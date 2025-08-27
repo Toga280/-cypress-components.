@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   cypress-run:
@@ -37,3 +38,10 @@ jobs:
         with:
           name: cypress-videos
           path: cypress/videos
+
+      - name: Notify Discord
+        if: always()
+        run: |
+          curl -H "Content-Type: application/json" \
+            -d '{"content": "✅ Build généré après push sur la branche main !"}' \
+            https://discord.com/api/webhooks/1410246615213539420/UbJOPunbJvvZk1r4iCkPS9vexQSncvC81oVsV-klUKuL4Avod_HCpkR5gbTAChnLP61R
